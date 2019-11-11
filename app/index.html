@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo list</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link rel="stylesheet" href="./css/select2.min.css"><link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./css/reset.css"><link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./css/main.css"><link rel="stylesheet" href="">
+</head>
+<body>
+  
+  <div class="main-content">
+    <h1>ToDo List</h1>
+    <div class="todo-list-content flex">
+      <div class="control-items search">
+        <input type="search">
+      </div>
+      <div class="control-items status">
+        <select name="" id='status-select'></select>
+      </div>
+      <div class="control-items priority">
+        <select name="" id="priority-select"></select>
+      </div>
+      <div class="control-items button-create">
+       <button id='create-todo-item' class="create-todo-item">CREATE</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="pop-up-form mfp-hide" id="pop-up-form">
+   <label >
+     <span>Title:</span>
+     <input type="text" id="input-title">
+    </label>
+   <label >
+      <span>Description::</span>
+     <input type="text" id="input-descr">
+    </label>
+   <div class="pop-up-form-select">
+      <span>Description::</span>
+     <select name="" id="form-select"></select>
+  </div>
+  <div class="form-btns  flex">
+      <button id='form-cancel' class="form-buttons cancel">CANCEL</button>
+      <button id='form-save' class="form-buttons">SAVE</button>
+     </div>
+  </div>
+  <script  src="https://code.jquery.com/jquery-3.4.1.slim.js"   integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="./js/select2.min.js"></script>
+<script src='./js/main.js'></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "trexlend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DVRoman13/trex-shcool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DVRoman13/trex-shcool/issues"
+  },
+  "homepage": "https://github.com/DVRoman13/trex-shcool#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "3.9.1",
+    "gulp-sass": "^4.0.2",
+    "sass": "^1.22.12"
+  }
+}

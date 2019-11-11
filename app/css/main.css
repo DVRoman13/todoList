@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box; }
+
+.flex {
+  display: flex; }
+
+.main-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px 0; }
+  .main-content h1 {
+    text-align: center; }
+
+.todo-list-content {
+  justify-content: space-between;
+  padding-top: 22px; }
+
+.search input {
+  width: 410px;
+  height: 40px;
+  padding-left: 15px; }
+
+.main-content .select2 {
+  width: 260px !important; }
+
+.main-content .select2-container .select2-selection--single {
+  height: 40px; }
+
+.main-content .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  top: 18px; }
+
+.create-todo-item {
+  width: 160px;
+  background: #2196F3;
+  border-radius: 4px;
+  padding: 10px 0;
+  color: #fff; }
+
+.pop-up-form {
+  margin: 0 auto;
+  padding: 40px;
+  width: 380px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.17);
+  border-radius: 4px; }
+  .pop-up-form label {
+    margin-bottom: 16px;
+    display: block; }
+    .pop-up-form label span {
+      display: block;
+      margin-bottom: 11px; }
+    .pop-up-form label input {
+      width: 100%;
+      height: 40px;
+      padding-left: 15px;
+      border: 1px solid #999999;
+      border-radius: 4px; }
+  .pop-up-form .select2 {
+    width: 100% !important; }
+  .pop-up-form .select2-container .select2-selection--single {
+    height: 40px; }
+  .pop-up-form .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    top: 18px; }
+  .pop-up-form .pop-up-form-select {
+    justify-content: space-between;
+    margin-top: 16px; }
+    .pop-up-form .pop-up-form-select span {
+      display: block;
+      margin-bottom: 11px; }
+  .pop-up-form .form-btns {
+    margin-top: 30px;
+    justify-content: space-between; }
+  .pop-up-form .form-buttons {
+    background: #2196F3;
+    border-radius: 4px;
+    width: 143px;
+    padding: 19px 0;
+    color: #fff; }
+  .pop-up-form .form-buttons.cancel {
+    background: transparent;
+    border-radius: 4px;
+    width: 143px;
+    padding: 19px 0;
+    color: #2196F3; }
