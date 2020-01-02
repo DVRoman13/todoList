@@ -1,13 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 * {
   box-sizing: border-box; }
 
 .flex {
   display: flex; }
 
+.hide {
+  display: none !important; }
+
 .main-content {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 30px 0; }
+  padding: 30px;
+  min-height: 100vh; }
   .main-content h1 {
     text-align: center; }
 
@@ -82,3 +87,99 @@
     width: 143px;
     padding: 19px 0;
     color: #2196F3; }
+
+.todo-items-box {
+  margin-top: 70px;
+  flex-wrap: wrap; }
+
+.item-cart {
+  max-width: 366px;
+  width: 100%;
+  padding: 36px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 60px; }
+  .item-cart:nth-child(3n) {
+    margin-right: 0; }
+  .item-cart .title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 116px;
+    color: #333333; }
+  .item-cart .massedge {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #666666;
+    margin-bottom: 52px; }
+  .item-cart .bottom-content {
+    justify-content: space-between; }
+  .item-cart .priority {
+    border: 1px solid #2196F3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 19px 0;
+    width: 143px;
+    display: inline-block;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2196F3; }
+  .item-cart .status-drop {
+    cursor: pointer;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center; }
+    .item-cart .status-drop:hover {
+      background-color: #F0F5FA; }
+    .item-cart .status-drop ul {
+      position: absolute;
+      width: 126px;
+      min-height: 162px;
+      top: 66px;
+      right: 0;
+      box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.17);
+      background-color: #ffffff; }
+      .item-cart .status-drop ul li {
+        font-family: Roboto;
+        text-align: center;
+        padding: 17px 0;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 20px; }
+        .item-cart .status-drop ul li:hover {
+          background-color: #F0F5FA; }
+    .item-cart .status-drop span {
+      width: 4px;
+      height: 4px;
+      background: #cccccc;
+      border-radius: 50%;
+      margin-right: 4px; }
+      .item-cart .status-drop span:last-child {
+        margin-right: 0; }
+
+.green {
+  background: green; }
+
+.high .priority {
+  border: 1px solid red;
+  color: red; }
+
+.low .priority {
+  border: 1px solid green;
+  color: green; }

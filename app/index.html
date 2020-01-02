@@ -16,17 +16,23 @@
     <h1>ToDo List</h1>
     <div class="todo-list-content flex">
       <div class="control-items search">
-        <input type="search">
-      </div>
-      <div class="control-items status">
-        <select name="" id='status-select'></select>
+        <input type="search" id='title-search'>
       </div>
       <div class="control-items priority">
-        <select name="" id="priority-select"></select>
+        <select name="" id="priority-select">
+          <option value="all">All</option>
+          <option value="High">High</option>
+          <option value="Normal">Normal</option>
+          <option value="Low">Low</option>
+        </select>
       </div>
       <div class="control-items button-create">
        <button id='create-todo-item' class="create-todo-item">CREATE</button>
       </div>
+    </div>
+
+    <div class="todo-items-box flex">
+     
     </div>
   </div>
 
@@ -36,18 +42,45 @@
      <input type="text" id="input-title">
     </label>
    <label >
-      <span>Description::</span>
+      <span>Description:</span>
      <input type="text" id="input-descr">
     </label>
    <div class="pop-up-form-select">
-      <span>Description::</span>
-     <select name="" id="form-select"></select>
+      <span>Priority:</span>
+     <select name="" id="form-select">
+        <option value="High">High</option>
+        <option value="Normal">Normal</option>
+        <option value="Low">Low</option>
+     </select>
   </div>
   <div class="form-btns  flex">
       <button id='form-cancel' class="form-buttons cancel">CANCEL</button>
       <button id='form-save' class="form-buttons">SAVE</button>
      </div>
   </div>
+
+  <div class="pop-up-form mfp-hide" id="pop-up-form-edit">
+      <label >
+        <span>Title:</span>
+        <input type="text" id="input-title-edit">
+       </label>
+      <label >
+         <span>Description:</span>
+        <input type="text" id="input-descr-edit">
+       </label>
+      <div class="pop-up-form-select">
+         <span>Priority:</span>
+        <select name="" id="form-select-edit">
+          <option value="High">High</option>
+          <option value="Normal">Normal</option>
+          <option value="Low">Low</option>
+        </select>
+     </div>
+     <div class="form-btns  flex">
+         <button id='form-edit-cancel' class="form-buttons cancel">CANCEL</button>
+         <button id='form-edit' class="form-buttons">SAVE</button>
+        </div>
+     </div>
   <script  src="https://code.jquery.com/jquery-3.4.1.slim.js"   integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 <script src="./js/select2.min.js"></script>
